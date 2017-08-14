@@ -1,0 +1,19 @@
+public class LocalVariables {
+  public LocalVariables();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  void lvs(int);
+    Code:
+       0: iconst_1
+       1: istore_2
+       2: iconst_2
+       3: istore_3
+       4: ldc2_w        #2                  // long 3l
+       7: lstore        4
+       9: iconst_4
+      10: istore        6
+      12: return
+}
