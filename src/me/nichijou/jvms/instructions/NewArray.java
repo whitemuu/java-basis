@@ -1,3 +1,5 @@
+package me.nichijou.jvms.instructions;
+
 /**
  * Created by nichijou on 8/14/17.
  */
