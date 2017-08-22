@@ -6,11 +6,12 @@ import java.lang.invoke.MethodType;
 
 /**
  * Created by nichijou on 8/19/17.
+ * de/p262
  */
 public class MethodHandleTest {
 	static class ClassA {
 		public void println(String s) {
-			System.out.println(s);
+			System.out.println("classA: "+s);
 		}
 	}
 
@@ -21,7 +22,7 @@ public class MethodHandleTest {
 	}
 
 	public static void main(String[] args) throws Throwable {
-		Object obj = System.currentTimeMillis() % 2 == 0? System.out:new ClassA();
+		Object obj = System.currentTimeMillis() % 2 == 0 ? System.out : new ClassA();
 		getPrintlnMH(obj).invokeExact("hello world");
 	}
 }

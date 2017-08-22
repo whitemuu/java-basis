@@ -1,0 +1,49 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   EnumDays.java
+
+package me.nichijou.javac;
+
+
+public final class EnumDays extends Enum
+{
+
+    public static EnumDays[] values()
+    {
+        return (EnumDays[])$VALUES.clone();
+    }
+
+    public static EnumDays valueOf(String name)
+    {
+        return (EnumDays)Enum.valueOf(me/nichijou/javac/EnumDays, name);
+    }
+
+    private EnumDays(String s, int i)
+    {
+        super(s, i);
+    }
+
+    public static final EnumDays SUNDAY;
+    public static final EnumDays MONDAY;
+    public static final EnumDays TUESDAY;
+    public static final EnumDays WEDNESDAY;
+    public static final EnumDays THURSDAY;
+    public static final EnumDays FRIDAY;
+    public static final EnumDays SATURDAY;
+    private static final EnumDays $VALUES[];
+
+    static
+    {
+        SUNDAY = new EnumDays("SUNDAY", 0);
+        MONDAY = new EnumDays("MONDAY", 1);
+        TUESDAY = new EnumDays("TUESDAY", 2);
+        WEDNESDAY = new EnumDays("WEDNESDAY", 3);
+        THURSDAY = new EnumDays("THURSDAY", 4);
+        FRIDAY = new EnumDays("FRIDAY", 5);
+        SATURDAY = new EnumDays("SATURDAY", 6);
+        $VALUES = (new EnumDays[] {
+            SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+        });
+    }
+}
