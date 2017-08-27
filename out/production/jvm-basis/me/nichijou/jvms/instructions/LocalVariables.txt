@@ -1,19 +1,75 @@
-public class LocalVariables {
-  public LocalVariables();
+public class me.nichijou.jvms.instructions.LocalVariables
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#25         // java/lang/Object."<init>":()V
+   #2 = Long               3l
+   #4 = Class              #26            // me/nichijou/jvms/instructions/LocalVariables
+   #5 = Class              #27            // java/lang/Object
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = Utf8               Code
+   #9 = Utf8               LineNumberTable
+  #10 = Utf8               LocalVariableTable
+  #11 = Utf8               this
+  #12 = Utf8               Lme/nichijou/jvms/instructions/LocalVariables;
+  #13 = Utf8               lvs
+  #14 = Utf8               (I)V
+  #15 = Utf8               i
+  #16 = Utf8               I
+  #17 = Utf8               m
+  #18 = Utf8               S
+  #19 = Utf8               j
+  #20 = Utf8               k
+  #21 = Utf8               J
+  #22 = Utf8               l
+  #23 = Utf8               SourceFile
+  #24 = Utf8               LocalVariables.java
+  #25 = NameAndType        #6:#7          // "<init>":()V
+  #26 = Utf8               me/nichijou/jvms/instructions/LocalVariables
+  #27 = Utf8               java/lang/Object
+{
+  public me.nichijou.jvms.instructions.LocalVariables();
+    descriptor: ()V
+    flags: ACC_PUBLIC
     Code:
-       0: aload_0
-       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
-       4: return
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lme/nichijou/jvms/instructions/LocalVariables;
 
   void lvs(int);
+    descriptor: (I)V
+    flags:
     Code:
-       0: iconst_1
-       1: istore_2
-       2: iconst_2
-       3: istore_3
-       4: ldc2_w        #2                  // long 3l
-       7: lstore        4
-       9: iconst_4
-      10: istore        6
-      12: return
+      stack=2, locals=7, args_size=2
+         0: iconst_1
+         1: istore_2
+         2: iconst_2
+         3: istore_3
+         4: ldc2_w        #2                  // long 3l
+         7: lstore        4
+         9: iconst_4
+        10: istore        6
+        12: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 2
+        line 11: 4
+        line 12: 9
+        line 13: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lme/nichijou/jvms/instructions/LocalVariables;
+            0      13     1     i   I
+            2      11     2     m   S
+            4       9     3     j   I
+            9       4     4     k   J
+           12       1     6     l   I
 }

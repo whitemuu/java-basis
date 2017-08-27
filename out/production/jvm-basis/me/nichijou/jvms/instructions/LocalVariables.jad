@@ -1,0 +1,23 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   LocalVariables.java
+
+package me.nichijou.jvms.instructions;
+
+
+public class LocalVariables
+{
+
+    public LocalVariables()
+    {
+    }
+
+    void lvs(int i)
+    {
+        short m = 1;
+        int j = 2;
+        long k = 3L;
+        int l = 4;
+    }
+}
